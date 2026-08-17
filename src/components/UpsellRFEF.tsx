@@ -250,8 +250,9 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
               src="https://i.ibb.co/23rPgS2m/Chat-GPT-Image-10-de-ago-de-2026-12-49-08.png" 
               alt="Estructura de Contenido RFEF" 
               className="w-full h-auto object-contain rounded-2xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.01]"
-              loading="lazy"
+              loading="eager"
               decoding="async"
+              fetchPriority="high"
               referrerPolicy="no-referrer"
             />
           </div>
