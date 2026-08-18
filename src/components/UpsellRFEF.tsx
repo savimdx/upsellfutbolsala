@@ -629,7 +629,7 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
               </div>
               <span className="text-xs sm:text-sm font-medium text-emerald-400/90 mt-1 flex items-center justify-center gap-1.5 tracking-wide">
                 <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                Puede pagar en su moneda local
+                Puedes pagar en tu moneda local
               </span>
             </div>
 
