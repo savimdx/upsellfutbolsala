@@ -5,6 +5,8 @@ import futsalActionImg from '../assets/images/futsal_action.webp';
 import carlosMendozaImg from '../assets/images/carlos_mendoza.jpg';
 import javierOrtegaImg from '../assets/images/javier_ortega.jpg';
 import miguelGarridoImg from '../assets/images/miguel_garrido.jpg';
+import rfefTacticsCoverImg from '../assets/images/rfef_tactics_cover.png';
+import rfefStructureMockupImg from '../assets/images/rfef_structure_mockup.png';
 import { 
   ShieldCheck, 
   BookOpen, 
@@ -191,13 +193,12 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
           <div className="pt-4 flex flex-col items-center justify-center max-w-2xl mx-auto">
             <div className="relative group rounded-2xl bg-slate-900/60 p-2 sm:p-3 border border-slate-700/80 shadow-2xl transition-all duration-300 hover:border-yellow-400/50 w-full flex flex-col items-center justify-center overflow-hidden">
               <img 
-                src="https://i.ibb.co/LXDCjFnZ/Chat-GPT-Image-10-de-ago-de-2026-12-43-40.png" 
+                src={rfefTacticsCoverImg} 
                 alt="Sistemas tácticos y metodologías RFEF" 
                 className="w-full h-auto max-w-xl object-contain rounded-xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.01]"
                 loading="eager"
                 decoding="async"
                 fetchPriority="high"
-                referrerPolicy="no-referrer"
               />
             </div>
           </div>
@@ -252,13 +253,12 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
         <div className="flex flex-col items-center justify-center max-w-3xl mx-auto my-2">
           <div className="relative group rounded-3xl bg-slate-900/60 p-3 border border-slate-800/80 shadow-2xl transition-all duration-300 hover:border-yellow-400/50 w-full flex flex-col items-center justify-center overflow-hidden min-h-[220px]">
             <img 
-              src="https://i.ibb.co/23rPgS2m/Chat-GPT-Image-10-de-ago-de-2026-12-49-08.png" 
+              src={rfefStructureMockupImg} 
               alt="Estructura de Contenido RFEF" 
               className="w-full h-auto object-contain rounded-2xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.01]"
               loading="eager"
               decoding="async"
               fetchPriority="high"
-              referrerPolicy="no-referrer"
             />
           </div>
         </div>
