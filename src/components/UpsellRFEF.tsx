@@ -157,13 +157,13 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
         </div>
       </div>
 
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-24 pb-16 relative z-10 space-y-16">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-14 sm:pt-16 pb-10 relative z-10 space-y-8 sm:space-y-10">
         
         {/* ================= HERO TEXT & HOOK ================= */}
-        <div className="text-center space-y-6 max-w-4xl mx-auto">
+        <div className="text-center space-y-4 max-w-4xl mx-auto">
           
           {/* High-Converting Creative Upsell Progress Bar placed above the title in ALL CAPS */}
-          <div className="bg-slate-900/60 border border-white/10 py-3 px-5 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left rounded-2xl max-w-3xl mx-auto shadow-lg backdrop-blur-sm">
+          <div className="bg-slate-900/60 border border-white/10 py-2.5 px-4 sm:px-5 flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left rounded-2xl max-w-3xl mx-auto shadow-lg backdrop-blur-sm">
             <div className="flex items-center gap-2.5">
               <span className="text-[11px] sm:text-xs font-black text-slate-100 tracking-wider uppercase">
                 PASO 2 DE 3: <span className="text-yellow-400 font-black">¡FALTA POCO PARA FINALIZAR!</span> TU PEDIDO PRINCIPAL YA ESTÁ RESERVADO
@@ -177,19 +177,19 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
             </div>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-white font-sans uppercase">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-white font-sans uppercase">
             Descubre las <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-white to-yellow-300">Estrategias y Tácticas de Fútbol Sala</span> <br className="hidden sm:inline"/>
             impartidas por la <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-yellow-400">
               Real Federación Española de Fútbol
             </span>
           </h1>
 
-          <p className="text-base sm:text-lg text-slate-300 font-medium leading-relaxed max-w-3xl mx-auto">
+          <p className="text-sm sm:text-base text-slate-300 font-medium leading-relaxed max-w-3xl mx-auto">
             Aprende los sistemas tácticos, principios de juego and metodologías utilizadas en la formación de entrenadores para organizar mejor tus entrenamientos y potenciar el rendimiento de tu equipo.
           </p>
 
           {/* Featured Hero Showcase Image */}
-          <div className="pt-2 flex flex-col items-center justify-center max-w-3xl mx-auto">
+          <div className="pt-1 flex flex-col items-center justify-center max-w-3xl mx-auto">
             <div className="relative group rounded-2xl bg-slate-900/60 p-2 sm:p-3 border border-slate-800/80 shadow-2xl transition-all duration-300 hover:border-yellow-400/50 w-full flex flex-col items-center justify-center overflow-hidden">
               <img 
                 src={rfefHeroShowcaseImg || "https://i.ibb.co/GfbWnhQN/Chat-GPT-Image-10-de-ago-de-2026-12-49-08.png"} 
@@ -211,13 +211,13 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
         </div>
 
         {/* ================= FEATURES ROW ================= */}
-        <div className="bg-slate-900/60 border border-slate-800/80 rounded-3xl p-6 sm:p-10 lg:p-12 backdrop-blur-md shadow-2xl relative overflow-hidden flex flex-col items-center">
+        <div className="bg-slate-900/60 border border-slate-800/80 rounded-3xl p-5 sm:p-7 lg:p-8 backdrop-blur-md shadow-2xl relative overflow-hidden flex flex-col items-center">
           
           {/* Quick value features list */}
-          <div className="w-full max-w-3xl space-y-6 flex flex-col justify-center items-center">
-            <div className="space-y-2 text-center">
+          <div className="w-full max-w-3xl space-y-4 flex flex-col justify-center items-center">
+            <div className="space-y-1.5 text-center">
               <span className="text-xs font-extrabold text-blue-400 uppercase tracking-widest font-mono">ESTRUCTURA DE ALTO CONTENIDO</span>
-              <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight uppercase">
+              <h3 className="text-xl sm:text-3xl font-black text-white tracking-tight uppercase">
                 La Biblioteca Táctica Más Completa
               </h3>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-2xl mx-auto">
@@ -226,7 +226,7 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
             </div>
 
             {/* Quick specifications list - 1 col on mobile, 2 cols on desktop/tablet */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-3 w-full max-w-2xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 w-full max-w-2xl">
               <div className="flex items-center justify-center space-x-3 text-sm sm:text-base text-slate-200 font-medium bg-slate-950/60 p-4 rounded-xl border border-slate-800 hover:border-yellow-400/20 transition-all">
                 <Check className="h-5 w-5 text-yellow-400 flex-shrink-0" />
                 <span>Ejercicios Prácticos</span>
@@ -256,19 +256,19 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
         </div>
 
         {/* ================= INTERACTIVE TACTICAL BOARD SECTION ================= */}
-        <div className="space-y-6">
-          <div className="text-center space-y-2">
+        <div className="space-y-4">
+          <div className="text-center space-y-1.5">
             <span className="text-xs font-bold font-mono text-blue-400 uppercase tracking-widest block">PIZARRA TÁCTICA INTERACTIVA</span>
-            <h2 className="text-2xl sm:text-3xl font-black text-white uppercase">Visualiza los Sistemas de Juego</h2>
+            <h2 className="text-xl sm:text-3xl font-black text-white uppercase">Visualiza los Sistemas de Juego</h2>
             <p className="text-xs sm:text-sm text-slate-400 max-w-2xl mx-auto">
               Simula las rotaciones y pases estratégicos de fútbol sala de la pizarra táctica en tiempo real para asimilar la metodología oficial de la RFEF.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-stretch">
             
             {/* Left: The Virtual Court layout */}
-            <div className="lg:col-span-7 bg-blue-950/60 border border-blue-900/40 rounded-3xl p-6 flex flex-col justify-between space-y-4 shadow-2xl relative min-h-[380px] sm:min-h-[440px]">
+            <div className="lg:col-span-7 bg-blue-950/60 border border-blue-900/40 rounded-3xl p-4 sm:p-5 flex flex-col justify-between space-y-3 shadow-2xl relative min-h-[350px] sm:min-h-[400px]">
               
               {/* Tactical court simulation */}
               <div className="relative w-full aspect-[4/3] bg-blue-900 border-4 border-slate-100 rounded-2xl overflow-hidden shadow-inner p-2 select-none flex-grow">
@@ -428,37 +428,37 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
         </div>
 
         {/* ================= BENEFITS SECTION ================= */}
-        <div className="space-y-6">
-          <div className="text-center space-y-2">
+        <div className="space-y-4">
+          <div className="text-center space-y-1.5">
             <span className="text-xs font-bold font-mono text-yellow-400 uppercase tracking-widest block">BENEFICIOS EXTRAORDINARIOS</span>
-            <h2 className="text-2xl sm:text-3xl font-black text-white uppercase">Mejora el Rendimiento del Equipo</h2>
+            <h2 className="text-xl sm:text-3xl font-black text-white uppercase">Mejora el Rendimiento del Equipo</h2>
             <p className="text-xs sm:text-sm text-slate-400 max-w-2xl mx-auto">
               Implementar estas sesiones estructuradas te otorgará beneficios directos tanto en tu reputación como entrenador como en el marcador de tus partidos dominicales.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs sm:text-sm">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs sm:text-sm">
             
-            <div className="bg-slate-900/40 border border-slate-800/80 p-5 rounded-2xl space-y-2.5 text-center transition-all hover:border-yellow-400/20">
-              <div className="h-9 w-9 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mx-auto font-bold font-mono text-sm">1</div>
+            <div className="bg-slate-900/40 border border-slate-800/80 p-4 sm:p-5 rounded-2xl space-y-2 text-center transition-all hover:border-yellow-400/20">
+              <div className="h-8 w-8 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mx-auto font-bold font-mono text-xs">1</div>
               <h4 className="font-extrabold text-white text-sm">Ahorra Horas de Planificación</h4>
               <p className="text-slate-400 text-xs leading-relaxed">No pierdas tiempo pensando qué hacer. Solo escoge la sesión preestablecida y aplícala.</p>
             </div>
 
-            <div className="bg-slate-900/40 border border-slate-800/80 p-5 rounded-2xl space-y-2.5 text-center transition-all hover:border-yellow-400/20">
-              <div className="h-9 w-9 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mx-auto font-bold font-mono text-sm">2</div>
+            <div className="bg-slate-900/40 border border-slate-800/80 p-4 sm:p-5 rounded-2xl space-y-2 text-center transition-all hover:border-yellow-400/20">
+              <div className="h-8 w-8 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mx-auto font-bold font-mono text-xs">2</div>
               <h4 className="font-extrabold text-white text-sm">Comprensión Táctica Superior</h4>
               <p className="text-slate-400 text-xs leading-relaxed">Tus jugadores desarrollarán una asimilación intuitiva de los desmarques y rotaciones.</p>
             </div>
 
-            <div className="bg-slate-900/40 border border-slate-800/80 p-5 rounded-2xl space-y-2.5 text-center transition-all hover:border-yellow-400/20">
-              <div className="h-9 w-9 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mx-auto font-bold font-mono text-sm">3</div>
+            <div className="bg-slate-900/40 border border-slate-800/80 p-4 sm:p-5 rounded-2xl space-y-2 text-center transition-all hover:border-yellow-400/20">
+              <div className="h-8 w-8 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mx-auto font-bold font-mono text-xs">3</div>
               <h4 className="font-extrabold text-white text-sm">Variabilidad de Ejercicios</h4>
               <p className="text-slate-400 text-xs leading-relaxed">Mantén alta la motivación del grupo con dinámicas totalmente variadas e integradas.</p>
             </div>
 
-            <div className="bg-slate-900/40 border border-slate-800/80 p-5 rounded-2xl space-y-2.5 text-center transition-all hover:border-yellow-400/20">
-              <div className="h-9 w-9 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mx-auto font-bold font-mono text-sm">4</div>
+            <div className="bg-slate-900/40 border border-slate-800/80 p-4 sm:p-5 rounded-2xl space-y-2 text-center transition-all hover:border-yellow-400/20">
+              <div className="h-8 w-8 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mx-auto font-bold font-mono text-xs">4</div>
               <h4 className="font-extrabold text-white text-sm">Aumento del Rendimiento</h4>
               <p className="text-slate-400 text-xs leading-relaxed">Toma el control del partido mediante salidas limpias de presión y presión agresiva alta.</p>
             </div>
@@ -467,19 +467,19 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
         </div>
 
         {/* ================= TESTIMONIALS SECTION ================= */}
-        <div className="space-y-6">
-          <div className="text-center space-y-2">
+        <div className="space-y-4">
+          <div className="text-center space-y-1.5">
             <span className="text-xs font-bold font-mono text-blue-400 uppercase tracking-widest block">CASOS DE ÉXITO</span>
-            <h2 className="text-2xl sm:text-3xl font-black text-white uppercase">Entrenadores Satisfechos</h2>
+            <h2 className="text-xl sm:text-3xl font-black text-white uppercase">Entrenadores Satisfechos</h2>
             <p className="text-xs sm:text-sm text-slate-400 max-w-xl mx-auto">
               Testimonios breves de profesionales que ya implementan la metodología RFEF en sus equipos de fútbol sala.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
             
             {/* Testimonial 1 */}
-            <div className="bg-slate-900/40 border border-slate-800/80 p-6 rounded-3xl space-y-4 relative">
+            <div className="bg-slate-900/40 border border-slate-800/80 p-5 rounded-3xl space-y-3 relative">
               <div className="flex text-yellow-400">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-4 w-4 fill-current" />
@@ -513,7 +513,7 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
             </div>
 
             {/* Testimonial 2 */}
-            <div className="bg-slate-900/40 border border-slate-800/80 p-6 rounded-3xl space-y-4 relative">
+            <div className="bg-slate-900/40 border border-slate-800/80 p-5 rounded-3xl space-y-3 relative">
               <div className="flex text-yellow-400">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-4 w-4 fill-current" />
@@ -547,7 +547,7 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
             </div>
 
             {/* Testimonial 3 */}
-            <div className="bg-slate-900/40 border border-slate-800/80 p-6 rounded-3xl space-y-4 relative">
+            <div className="bg-slate-900/40 border border-slate-800/80 p-5 rounded-3xl space-y-3 relative">
               <div className="flex text-yellow-400">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-4 w-4 fill-current" />
@@ -584,16 +584,16 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
         </div>
 
         {/* ================= SPECIAL SINGLE OPPORTUNITY PRICE BLOCK ================= */}
-        <div id="oferta-exclusiva" className="bg-gradient-to-br from-blue-950 via-slate-950 to-blue-950 border-2 border-yellow-400 rounded-3xl p-6 sm:p-12 text-center relative overflow-hidden shadow-[0_15px_50px_rgba(59,130,246,0.15)] space-y-6 max-w-4xl mx-auto">
+        <div id="oferta-exclusiva" className="bg-gradient-to-br from-blue-950 via-slate-950 to-blue-950 border-2 border-yellow-400 rounded-3xl p-5 sm:p-8 md:p-10 text-center relative overflow-hidden shadow-[0_15px_50px_rgba(59,130,246,0.15)] space-y-4 max-w-4xl mx-auto">
           
           {/* Subtle decoration elements */}
           <div className="absolute right-0 top-0 -z-10 h-32 w-32 rounded-full bg-yellow-400/5 blur-3xl pointer-events-none"></div>
 
-          <div className="space-y-3.5">
-            <span className="inline-flex items-center gap-1.5 bg-yellow-400 text-slate-950 px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest mx-auto">
+          <div className="space-y-2.5">
+            <span className="inline-flex items-center gap-1.5 bg-yellow-400 text-slate-950 px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-widest mx-auto">
               🔥 DESCUENTO ÚNICO ADICIONAL DEL 90%
             </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight leading-none uppercase">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-tight leading-none uppercase">
               Consigue la Biblioteca Completa Ahora
             </h2>
             <p className="text-xs sm:text-sm text-slate-400 max-w-xl mx-auto">
@@ -602,7 +602,7 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
           </div>
 
           {/* Pricing container */}
-          <div className="max-w-md mx-auto py-6 border-y border-white/5 space-y-4">
+          <div className="max-w-md mx-auto py-4 border-y border-white/5 space-y-3">
             
             {/* Price anchors */}
             <div className="flex items-center justify-center gap-2 sm:gap-4 text-[10px] min-[360px]:text-xs sm:text-sm font-semibold text-slate-400 whitespace-nowrap flex-nowrap">
@@ -613,9 +613,9 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
             </div>
 
             {/* Price Callout */}
-            <div className="flex flex-col items-center justify-center my-2 select-none whitespace-nowrap">
+            <div className="flex flex-col items-center justify-center my-1 select-none whitespace-nowrap">
               <div className="flex items-center justify-center flex-nowrap gap-0.5 sm:gap-1">
-                <span className="text-[3.75rem] min-[360px]:text-[4.75rem] sm:text-[8.5rem] md:text-[10.5rem] font-black text-yellow-400 tracking-tighter leading-none drop-shadow-md shrink-0">
+                <span className="text-[3.5rem] min-[360px]:text-[4.25rem] sm:text-[7.5rem] md:text-[9rem] font-black text-yellow-400 tracking-tighter leading-none drop-shadow-md shrink-0">
                   9,36€
                 </span>
               </div>
@@ -627,12 +627,12 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
           </div>
 
           {/* HOTMART - Sales Funnel Widget Container */}
-          <div className="w-full max-w-md mx-auto my-4 min-h-[50px]">
+          <div className="w-full max-w-md mx-auto my-3 min-h-[50px]">
             <div id="hotmart-sales-funnel"></div>
           </div>
 
           {/* SSL and security indicators */}
-          <div className="flex justify-center items-center gap-6 text-[10px] font-mono text-slate-500 uppercase tracking-widest pt-4 border-t border-white/5">
+          <div className="flex justify-center items-center gap-6 text-[10px] font-mono text-slate-500 uppercase tracking-widest pt-3 border-t border-white/5">
             <span className="flex items-center gap-1">🔒 Conexión SSL</span>
             <span className="flex items-center gap-1">🛡️ Garantía de 7 días</span>
             <span className="flex items-center gap-1">⚡ Acceso Inmediato</span>
@@ -641,13 +641,13 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
         </div>
 
         {/* ================= GUARANTEE SECTION ================= */}
-        <div className="bg-gradient-to-br from-blue-950/40 to-slate-950/60 border border-blue-900/30 rounded-3xl p-6 sm:p-10 flex flex-col md:flex-row items-center gap-6 sm:gap-8 max-w-4xl mx-auto">
-          <div className="h-20 w-20 sm:h-24 sm:w-24 rounded-full bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center text-yellow-400 flex-shrink-0 shadow-lg">
-            <Shield className="h-10 sm:h-12 sm:w-12 stroke-[1.5]" />
+        <div className="bg-gradient-to-br from-blue-950/40 to-slate-950/60 border border-blue-900/30 rounded-3xl p-5 sm:p-7 flex flex-col md:flex-row items-center gap-4 sm:gap-6 max-w-4xl mx-auto">
+          <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center text-yellow-400 flex-shrink-0 shadow-lg">
+            <Shield className="h-8 sm:h-10 sm:w-10 stroke-[1.5]" />
           </div>
-          <div className="space-y-2.5 text-center md:text-left">
+          <div className="space-y-2 text-center md:text-left">
             <span className="text-[10px] font-mono text-yellow-400 font-extrabold uppercase tracking-widest block">GARANTÍA DE SATISFACCIÓN INCONDICIONAL</span>
-            <h3 className="text-lg sm:text-xl font-black text-white uppercase">Garantía Incondicional de 7 Días</h3>
+            <h3 className="text-base sm:text-lg font-black text-white uppercase">Garantía Incondicional de 7 Días</h3>
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
               Prueba los sistemas tácticos y ejercicios de entrenamiento de fútbol sala durante 7 días completos. Si consideras que no eleva el level táctico y de juego de tu equipo, solicítanos un reembolso inmediato del 100% de tu dinero. Sin preguntas ni complicaciones.
             </p>
