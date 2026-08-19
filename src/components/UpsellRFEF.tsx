@@ -5,8 +5,7 @@ import futsalActionImg from '../assets/images/futsal_action.webp';
 import carlosMendozaImg from '../assets/images/carlos_mendoza.jpg';
 import javierOrtegaImg from '../assets/images/javier_ortega.jpg';
 import miguelGarridoImg from '../assets/images/miguel_garrido.jpg';
-import rfefTacticsCoverImg from '../assets/images/rfef_tactics_cover.png';
-import rfefStructureMockupImg from '../assets/images/rfef_structure_mockup.png';
+import rfefHeroShowcaseImg from '../assets/images/rfef_hero_showcase.png';
 import { 
   ShieldCheck, 
   BookOpen, 
@@ -189,13 +188,13 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
             Aprende los sistemas tácticos, principios de juego and metodologías utilizadas en la formación de entrenadores para organizar mejor tus entrenamientos y potenciar el rendimiento de tu equipo.
           </p>
 
-          {/* Featured táctica image */}
-          <div className="pt-4 flex flex-col items-center justify-center max-w-2xl mx-auto">
-            <div className="relative group rounded-2xl bg-slate-900/60 p-2 sm:p-3 border border-slate-700/80 shadow-2xl transition-all duration-300 hover:border-yellow-400/50 w-full flex flex-col items-center justify-center overflow-hidden">
+          {/* Featured Hero Showcase Image */}
+          <div className="pt-2 flex flex-col items-center justify-center max-w-3xl mx-auto">
+            <div className="relative group rounded-2xl bg-slate-900/60 p-2 sm:p-3 border border-slate-800/80 shadow-2xl transition-all duration-300 hover:border-yellow-400/50 w-full flex flex-col items-center justify-center overflow-hidden">
               <img 
-                src={rfefTacticsCoverImg} 
-                alt="Sistemas tácticos y metodologías RFEF" 
-                className="w-full h-auto max-w-xl object-contain rounded-xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.01]"
+                src={rfefHeroShowcaseImg} 
+                alt="Estructura de Contenido y Metodología RFEF" 
+                className="w-full h-auto max-w-2xl object-contain rounded-xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.01]"
                 loading="eager"
                 decoding="async"
                 fetchPriority="high"
@@ -246,20 +245,6 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
                 <span>Sistemas 4-0 y 3-1 Pivot</span>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Structure Mockup Image */}
-        <div className="flex flex-col items-center justify-center max-w-3xl mx-auto my-2">
-          <div className="relative group rounded-3xl bg-slate-900/60 p-3 border border-slate-800/80 shadow-2xl transition-all duration-300 hover:border-yellow-400/50 w-full flex flex-col items-center justify-center overflow-hidden min-h-[220px]">
-            <img 
-              src={rfefStructureMockupImg} 
-              alt="Estructura de Contenido RFEF" 
-              className="w-full h-auto object-contain rounded-2xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.01]"
-              loading="eager"
-              decoding="async"
-              fetchPriority="high"
-            />
           </div>
         </div>
 
@@ -614,9 +599,9 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
             
             {/* Price anchors */}
             <div className="flex items-center justify-center gap-2 sm:gap-4 text-[10px] min-[360px]:text-xs sm:text-sm font-semibold text-slate-400 whitespace-nowrap flex-nowrap">
-              <span className="text-slate-400 flex items-center gap-1">Valor Oficial: <span className="line-through text-red-400 font-extrabold">U$97,00</span></span>
+              <span className="text-slate-400 flex items-center gap-1">Valor Oficial: <span className="line-through text-red-400 font-extrabold">97,00€</span></span>
               <span className="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-1.5 py-0.5 sm:px-2 rounded font-mono font-bold uppercase text-[9px] min-[360px]:text-[10px] tracking-wider shrink-0">
-                Ahorras U$91,10
+                Ahorras 87,64€
               </span>
             </div>
 
@@ -624,13 +609,9 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
             <div className="flex flex-col items-center justify-center my-2 select-none whitespace-nowrap">
               <div className="flex items-center justify-center flex-nowrap gap-0.5 sm:gap-1">
                 <span className="text-[3.75rem] min-[360px]:text-[4.75rem] sm:text-[8.5rem] md:text-[10.5rem] font-black text-yellow-400 tracking-tighter leading-none drop-shadow-md shrink-0">
-                  U$5,90
+                  9,36€
                 </span>
               </div>
-              <span className="text-xs sm:text-sm font-medium text-emerald-400/90 mt-1 flex items-center justify-center gap-1.5 tracking-wide">
-                <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                Puedes pagar en tu moneda local
-              </span>
             </div>
 
             <p className="text-[10px] text-slate-500 leading-tight font-mono">
