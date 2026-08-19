@@ -192,12 +192,19 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
           <div className="pt-2 flex flex-col items-center justify-center max-w-3xl mx-auto">
             <div className="relative group rounded-2xl bg-slate-900/60 p-2 sm:p-3 border border-slate-800/80 shadow-2xl transition-all duration-300 hover:border-yellow-400/50 w-full flex flex-col items-center justify-center overflow-hidden">
               <img 
-                src={rfefHeroShowcaseImg} 
+                src={rfefHeroShowcaseImg || "https://i.ibb.co/GfbWnhQN/Chat-GPT-Image-10-de-ago-de-2026-12-49-08.png"} 
                 alt="Estructura de Contenido y Metodología RFEF" 
                 className="w-full h-auto max-w-2xl object-contain rounded-xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.01]"
                 loading="eager"
                 decoding="async"
                 fetchPriority="high"
+                referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget as HTMLImageElement;
+                  if (target.src !== "https://i.ibb.co/GfbWnhQN/Chat-GPT-Image-10-de-ago-de-2026-12-49-08.png") {
+                    target.src = "https://i.ibb.co/GfbWnhQN/Chat-GPT-Image-10-de-ago-de-2026-12-49-08.png";
+                  }
+                }}
               />
             </div>
           </div>
